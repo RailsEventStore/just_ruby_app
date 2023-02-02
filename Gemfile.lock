@@ -1,0 +1,43 @@
+PATH
+  remote: ../rails_event_store
+  specs:
+    ruby_event_store (2.9.0)
+      concurrent-ruby (~> 1.0, >= 1.1.6)
+    ruby_event_store-active_record (2.9.0)
+      activerecord (>= 6.0)
+      ruby_event_store (= 2.9.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (7.0.4.2)
+      activesupport (= 7.0.4.2)
+    activerecord (7.0.4.2)
+      activemodel (= 7.0.4.2)
+      activesupport (= 7.0.4.2)
+    activesupport (7.0.4.2)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    concurrent-ruby (1.2.0)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.17.0)
+    pg (1.4.5)
+    rake (13.0.6)
+    sqlite3 (1.5.4-arm64-darwin)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+
+PLATFORMS
+  arm64-darwin-21
+
+DEPENDENCIES
+  pg
+  rake
+  ruby_event_store-active_record!
+  sqlite3
+
+BUNDLED WITH
+   2.3.26
